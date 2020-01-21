@@ -1,15 +1,22 @@
 /**
  *
- * Hey. My name's Samuel Reed. I'm CTO of BitMEX.com and frequent
- * open source contributor.
- *
+ * Hey. My name's Chris Brousseau.
+ * I'm a Freelance Translator
+ * Slovak
+ * Czech
+ * Russian
+ * French
+ * English
+ * 
+ * I'm also a freelance web developer.
+ * 
  * I build interactive websites.
  *
- * How about some live coding?
+ * How about a live demonstration?
  */
 
 /**
- * Let's begin. We start by animating... well, everything.
+ * Let's begin. We start by animating the whole site.
  */
 
 * {
@@ -17,18 +24,25 @@
 }
 
 /**
- * That didn't do much. But you'll see.
+ * That didn't do anything different so far, but you'll see.
  *
  * Black on white is really boring,
- * so let's do something about it.
+ * so let's change it to something with more...
+ * 
+ * pizzazz \ pə-ˈzaz \
+ * noun
+ * :the quality of being exciting or attractive: such as
+ * a :GLAMOUR
+ * b :VITALITY sense 1
+ * 
  */
 
 html {
-  background: rgb(63, 82, 99);
+  background: rgb(22, 51, 35);
 }
 
 /***
- * Hold on...
+ * Time to change the text too.
  */
 
 pre, a {
@@ -38,9 +52,9 @@ pre, a {
 /**
  * That's better. Sorry about your eyes.
  *
- * Working in this big empty space is tough.
+ * Working in this big empty space is fairly weird-looking.
  *
- * I'm going to make a nice area for us to work in.
+ * Let's change that.
  */
 
 pre:not(:empty) {

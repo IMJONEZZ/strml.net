@@ -1,44 +1,23 @@
-STRML.net
+Brousseauai
 =========
 
-Samuel Reed
-CTO, BitMEX (The Bitcoin Mercantile Exchange)
-Full-Stack / NodeJS / DevOps
+Chris Brousseau
+Data Scientist Deep Learning NLP
+Python / NodeJS / 
 
 Contact
 -------
 
-* sam at bitmex dot com
-* samuel.trace.reed at gmail dot com
-* STRML on irc.freenode.net
-* @STRML_ on Twitter
+* chrisbrousseau304 at gmail dot com
+* IMJONEZZ on github
+* Chris Brousseau on LinkedIn
 
 Projects
 --------
 
-* www.BitMEX.com
-* www.Securesha.re
-* www.Tixelated.com
-* www.BrightestYoungThings.com
-and of course...
-* www.strml.net
-
-Open Source
------------
-
-* Babel
-* React-Grid-Layout
-* React-LocalStorage
-* React-Router-Component
-* React-Resizable
-* React-Draggable
-* OpenBazaar
-* JSXHint
-* BTChip-Signing-Tools
-* TextFit
-* Imgur-to-GFYcat
-* backbone.queryRouter
-* backbone.layoutManager
-* Mongoose-Filter-Denormalize
+* fluid.brousseauai.com - Has a corresponding app on iOS and Android!
+* gpt2brousseau.herokapp.com - Also has an app!
+* https://colab.research.google.com/drive/13G-oGB8GIPNBJ9XLqSdSKuUFBHjA7WfN - Tutorial notebook for Sentiment Analysis with an RNN or LSTM
+* https://colab.research.google.com/drive/1HNhBUkE2DM_q14GrTPMgykubwrsf-It- - Another tutorial but for Neural Style transfer using Pytorch
 
 

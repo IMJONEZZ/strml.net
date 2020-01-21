@@ -9,7 +9,7 @@
     "dev": "webpack-dev-server --open --mode development",
     "watch": "webpack --progress --watch"
   },
-  "author": "Samuel Reed <samuel.trace.reed@gmail.com> (http://strml.net/)",
+  "author": "Chris Brousseau <chrisbrousseau304@gmail.com> (https://brousseauai.com/)",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.0.0",

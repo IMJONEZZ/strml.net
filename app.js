@@ -38,7 +38,7 @@ async function startAnimation() {
     await writeTo(pgpEl, pgpText, 0, speed, false, 32);
     await writeTo(styleEl, styleText[3], 0, speed, true, 1);
   }
-  // Flow control straight from the ghettos of Milwaukee
+  // Flow control straight from the ghettos of Provo
   catch(e) {
     if (e.message === "SKIP IT") {
       surprisinglyShortAttentionSpan();

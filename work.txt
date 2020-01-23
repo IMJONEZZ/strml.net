@@ -15,8 +15,8 @@ Contact
 Projects
 --------
 
-* fluid.brousseauai.com - Has a corresponding app on iOS and Android!
-* gpt2brousseau.herokapp.com - Also has an app!
+* https://fluid.brousseauai.com - Has a corresponding app on iOS and Android!
+* https://gpt2brousseau.herokapp.com - Also has an app!
 * https://colab.research.google.com/drive/13G-oGB8GIPNBJ9XLqSdSKuUFBHjA7WfN - Tutorial notebook for Sentiment Analysis with an RNN or LSTM
 * https://colab.research.google.com/drive/1HNhBUkE2DM_q14GrTPMgykubwrsf-It- - Another tutorial but for Neural Style transfer using Pytorch
 

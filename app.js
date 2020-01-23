@@ -3,7 +3,7 @@ import Promise from 'bluebird';
 import Markdown from 'markdown';
 const md = Markdown.markdown.toHTML;
 import workText from 'raw-loader!./work.txt';
-import pgpText from 'raw-loader!./pgp.txt';
+import resText from 'raw-loader!./research.txt';
 import headerHTML from 'raw-loader!./header.html';
 let styleText = [0, 1, 2, 3].map((i) => require('raw-loader!./styles' + i + '.css').default);
 import preStyles from 'raw-loader!./prestyles.css';
@@ -14,7 +14,7 @@ import getPrefix from './lib/getPrefix';
 // Vars that will help us get er done
 const isDev = window.location.hostname === 'localhost';
 const speed = isDev ? 0 : 16;
-let style, styleEl, workEl, pgpEl, skipAnimationEl, pauseEl;
+let style, styleEl, workEl, resEl, skipAnimationEl, pauseEl;
 let animationSkipped = false, done = false, paused = false;
 let browserPrefix;
 
@@ -35,7 +35,8 @@ async function startAnimation() {
     createWorkBox();
     await Promise.delay(1000);
     await writeTo(styleEl, styleText[2], 0, speed, true, 1);
-    await writeTo(pgpEl, pgpText, 0, speed, false, 32);
+    await writeTo(resEl, resText, 0, speed, false, 1);
+
     await writeTo(styleEl, styleText[3], 0, speed, true, 1);
   }
   // Flow control straight from the ghettos of Provo
@@ -52,7 +53,8 @@ async function startAnimation() {
 async function surprisinglyShortAttentionSpan() {
   if (done) return;
   done = true;
-  pgpEl.innerHTML = pgpText;
+  resEl.innerHTML = replaceURLs(resText);
+  style.textContent = "#research-text * { " + browserPrefix + "transition: none; }";
   let txt = styleText.join('\n');
 
   // The work-text animations are rough
@@ -69,7 +71,7 @@ async function surprisinglyShortAttentionSpan() {
   let start = Date.now();
   while(Date.now() - 1000 > start) {
     workEl.scrollTop = Infinity;
-    styleEl.scrollTop = pgpEl.scrollTop = Infinity;
+    styleEl.scrollTop = resEl.scrollTop = Infinity;
     await Promise.delay(16);
   }
 }
@@ -143,7 +145,7 @@ function getEls() {
   style = document.getElementById('style-tag');
   styleEl = document.getElementById('style-text');
   workEl = document.getElementById('work-text');
-  pgpEl = document.getElementById('pgp-text');
+  resEl = document.getElementById('research-text');
   skipAnimationEl = document.getElementById('skip-animation');
   pauseEl = document.getElementById('pause-resume');
 }
